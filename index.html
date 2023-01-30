@@ -10,7 +10,11 @@
         <link href="images/favicon.ico" rel="icon" />
 	    <link href="styles/main.css" rel="stylesheet" />
     </head>
-    
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style>
     <body>
         <!-- top navigation bar -->
         <header>
@@ -23,15 +27,105 @@
         </header>
         <!-- Main content of the page-->
         <main>
-            <section id="home-page"> 
-                <picture>
-                    <img src="Jack_Tran_picture.jpg" alt="Picture of Jack Tran">
-                </picture>
-                <h1>Hey there. I'm<br> Jack Tran</h1>
-                <p>I'm a computer engineering student at UCSD <br> with a curiosity for software - let's code our<br> way to innovation!</p>
+            <div>
+                <section id="home-page"> 
+                    <picture>
+                        <img src="./images/profile pic.jpg" alt="picture of Jack Tran">
+                    </picture>
+                    <h1>Hey there. I'm<br> Jack Tran</h1>
+                    <p>I'm a computer engineering student at UCSD <br> with a curiosity for software - let's code our<br> way to innovation!</p>
+                    <a href="./images/Jack_Tran_Resume.pdf" target="_blank" rel="noopener noreferrer"><button name="resume button" ><b>Resume</b></button></a>
+                    <a href="https://github.com/tranjack288" target="_blank" rel="noopener noreferrer"><button name="github button" type="button"><b>GitHub</b></button></a>
+                    <a href="https://www.linkedin.com/in/jacktrancs/" target="_blank" rel="noopener noreferrer"><button name="linkedin button" type="button"><b>LinkedIn</b></button></a>
+                </section>
+            </div>
+            
+            <hr>
+            <section id="about me">
+                <h2>A Little About me</h2>
                 
+                <p>Hello there! I am a <em>Computer Engineering</em> student at <em>UCSD</em> with an expected graduation of 2024. My passion for coding drives me to continuously improve my skills and 
+                    find new and innovative ways to bring my ideas to life. My ultimate goal is to work for a leading technology company as a software engineer, where I can leverage my coding skills to 
+                    create products that positively impact people's lives. I am deeply invested in developing solutions that solve real-world problems and have meaningful impact on society.
+                    I have had experiences with working as a <em>student intern</em> for a research lab at <em>UCLA</em>, where I created an AI module to help elementary school students learn.
+                    <br><br>Aside from being a coding enthusiast, I am a proud member of <em>Phi Gamma Delta</em> fraternity. As a <em>community service leader</em> within the fraternity, I am committed to giving back to society by organizing events
+                    and initiatives that benefit those in need. When I'm not coding, I enjoy a healthy lifestyle through working out, playing soccer, and occasionally playing video games with my friends.
+                    I also cherish the time I spend with friends and making memories with them at music festivals.
+                </p>
+                <figure>
+                    <img src="images/pic with friends.jpg" alt="picture with friends">
+                    <figcaption>A picture of me and my friends hiking in Hawaii</figcaption>
+                    <img src="./images/lifting_resized.png" alt="lifting">
+                    <figcaption>Me deadlifting 455 pounds</figcaption>
+                    <img src="./images/snowboard.JPG" alt="snowboard">
+                    <figcaption>A picture my girlfriend and I snowboarding for the first time</figcaption>
+                </figure>
+            </section>
+            <hr>
+            <section id="Experiences">
+                <h1>Experiences</h1>
+                <section id="student intern">
+                    <h2>Student Intern | <em>Visual Machines Group at UCLA</em></h2>
+                    <h3>June 2019 to August 2019</h3>
+                    <p>I managed a group of high school and undergraduate students in producing a module talking about artificial intelligence. Our objective as a team was to focus specifically at computer vision and how AI is used to 
+                        develop autonomous driving. The task was to break down the complex topic so that even elementary school students can comprehend the material. In addition to the module, I had to transcribed the professor's lecture notes using LaTeX.
+                    </p>
+                </section>
+            </section>
+            <hr>
+            <section id="Projects">
+                <table>
+                    <caption>Projects</caption>
+                    <colgroup>
+                        <col span="2">
+                    </colgroup>
+                    <tr>
+                        <th>San Diego ZooSeeker App
+                            
+                        </th>
+                        <th>Workout Planner</th>
+                        <th>HIV Trace</th>
+                    </tr>
+                    <tr>
+                        <td>March 2022-June 2022</td>
+                        <td>February 2022-March 2022</td>
+                        <td>January 2022-March 2022</td>
+                    </tr>
+                    <tr>
+                        <th><p>I led a team of 6 members in an <i>Agile</i> software process to develop an <em>Android</em> app that generates a step-by-step guide for users to navigate their trip at the San Diego Zoo.
+                        I had apply Behavior-Driven development to meet with the client's user stories. I was in charge of coordinating the team's weekly stand up meetings through our three-weeks sprints.
+                        Additionally, I had to apply multiple design patterns: Strategy, Adapter, Observer, and Model-View-Presenter to accelerate the development process. JUnit and object mocking were used to increase test coverage and the 
+                        performance of the mobile application by 80% speed.        
+                        </p></th>
+                        <th><p>
+                            In this personal project, I wanted to create a basic workout planner where users are able to input their daily workouts and track their progression in the gym. In this dynamic page, all the datas 
+                            are stored in local storage. The goal of implementing this basic web application was to explore HTML, CSS, and JavaScript.
+                        </p></th>
+                        <th><p>
+                            I integrated an API of a graph as a tool to find transmission clusters and help prevent the spread of a virus. The application utilizes a variety of algorithms such as Djkstra's, Kruskal's, and BFS to traverse between
+                            nodes to find the shortest path given to a certain threshold. This application was developed using C++ and utilized a variety of data structures such as priority queues, custom comparators, disjoint sets, and map.
+                        </p></th>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="Contact Me">
+                <h1><strong>GET IN TOUCH</strong></h1>
+                <h2>Don't hesitate and reach out!</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email-form">Email Address:</label>
+                    <input type="email" id="email-form" name="email-form"><br>
+                    <textarea placeholder="Enter a message"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
             </section>
         </main>
+        <footer>
+            <h1>Experiment</h1>
+            <a href="experiment.html" target="_blank" rel="noopener noreferrer">Click Here to go to Experiment page</a>
+        </footer>
     </body>
 
 </html>
