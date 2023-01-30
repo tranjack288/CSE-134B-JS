@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Experiment Page</title>
+        <h1> hello</h1>
+        <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+        <p>I wanted to print a <span><svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg> within this line</span></p>
+        <aside>
+        This is me experimenting with script
+        <script>
+            
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 100);
+        </script>
+        </aside>
+        <template><h1>This is a template</h1></template>
+        
+            <fieldset>
+                <legend>Choose your favorite candy from the list</legend>
+            <label for="candy"></label>
+            <input list="candies">
+            <datalist id="candies">
+                <option value="Swedish Fish">
+                <option value="Sour Belts">
+                <option value="Reeses">
+            </datalist>
+            <input type="submit">
+            
+            <label for="candy">and now your second favorite:</label>
+            <select id="candies">
+              <option value="Swedish Fish">Swedish Fish</option>
+              <option value="Sour Belts">Sour Belts</option>
+              <option value="Reeses">Reeses</option>
+              </select>
+            <input type="submit">
+            </fieldset>
+            
+        
+
+        <pre> 
+                      the code tag <code>Hello World</code> makes the 
+        word have a different font</pre>
+        <iframe id="inlineFrameExample"
+            title="Inline Frame Example"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+        </iframe>
+        
+
+    </head>
+</html>
