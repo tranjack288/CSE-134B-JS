@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Experiment Page</title>
-        <h1> hello</h1>
+        
         <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
         <p>I wanted to print a <span><svg width="100" height="100">
             <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
@@ -21,30 +21,57 @@
         <template><h1>This is a template</h1></template>
         
             <fieldset>
-                <legend>Choose your favorite candy from the list</legend>
-            <label for="candy"></label>
-            <input list="candies">
-            <datalist id="candies">
-                <option value="Swedish Fish">
-                <option value="Sour Belts">
-                <option value="Reeses">
-            </datalist>
-            <input type="submit">
-            
-            <label for="candy">and now your second favorite:</label>
-            <select id="candies">
-              <option value="Swedish Fish">Swedish Fish</option>
-              <option value="Sour Belts">Sour Belts</option>
-              <option value="Reeses">Reeses</option>
-              </select>
-            <input type="submit">
+                <legend>Choose your favorite snack from the list</legend>
+                <select id="snacks">
+                    <optgroup label="Candy">
+                        <option value="Swedish Fish">Swedish Fish</option>
+                        <option value="Sour Belts">Sour Belts</option>
+                        <option value="Skittles">Skittles</option>
+                    </optgroup>
+                    <optgroup label="Chocolate">
+                        <option value="Hershey">Hershey</option>
+                        <option value="Kit Kat">Kit Kat</option>
+                        <option value="Reeses">Reeses</option>
+                    </optgroup>
+                </select>
+                <input type="submit">
+                <label for="snacks">and now your second favorite:</label>
+                <label for="snacks"></label>
+                <input list="snacks">
+                <datalist id="snacks">
+                    <option value="Swedish Fish">
+                    <option value="Sour Belts">
+                    <option value="Reeses">
+                        <option value="Hershey">Hershey</option>
+                        <option value="Kit Kat">Kit Kat</option>
+                        <option value="Reeses">Reeses</option>
+                </datalist>
+                <input type="submit">
             </fieldset>
-            
-        
-
-        <pre> 
-                      the code tag <code>Hello World</code> makes the 
-        word have a different font</pre>
+            <section>
+                <h1>a list of different tags</h1>
+                <ol>
+                    <li> Audio tag:
+                        <audio controls>
+                            <source src="./images/dog-barking-short-sound-effect.mp3">
+                        </audio>
+                    </li>
+                    <li>
+                        Video tag:
+                        <video controls>
+                            <source src="./images/pexels-anthony-shkraba-7525614.mp4">
+                        </video>
+                    </li>
+                </ol>
+                <ul>
+                    <li><pre> 
+                        <code>Hello World</code> 
+                    <u>Hello World</u>
+                       <v>Hello World</v>
+                    </pre></li>
+                    <li>Random</li>
+                </ul>
+            </section>
         <iframe id="inlineFrameExample"
             title="Inline Frame Example"
             src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
