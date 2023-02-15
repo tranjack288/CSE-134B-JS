@@ -9,51 +9,62 @@
         <meta name="author" content="Jack Tran"/>
         <link href="images/favicon.ico" rel="icon" />
 	    <link href="styles/main.css" rel="stylesheet" />
+        <link href="styles/bio-page.css" rel="stylesheet">
     <style>
         table,th,td{
             border: 1px solid black;
         }
     </style>
     </head>
-    <body>
+    <body class="flex-container column">
         <!-- top navigation bar -->
-        <header>
-            <h1>Jack Tran's Website</h1>
+        <header class="flex-container">
+            <!-- <h1>Jack Tran's Website</h1> -->
             <nav>
-                <a>About Me</a>
-                <a>Portfolio</a>
-                <a>Contact Me</a>
+                <ul>
+                  <li >Home</li>
+                  <li >About Me</li>
+                  <li >Portfolio</li>
+                  <li >Contact Me</li>
+                </ul>
             </nav>
         </header>
         <!-- Main content of the page-->
         <main>
-            <div>
-                <section id="home-page"> 
-                    <picture>
-                        <img src="./images/profile_pic.jpg" alt="picture of Jack Tran">
-                    </picture>
-                    <h1>Hey there. I'm<br> Jack Tran</h1>
-                    <p>I'm a computer engineering student at UCSD <br> with a curiosity for software - let's code our<br> way to innovation!</p>
-                    <a href="./images/Jack_Tran_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                        Resume
-                    </a>
-                    <a href="https://github.com/tranjack288" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/jacktrancs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <section id="home-page" class="flex-container"> 
+                <section id="title" class="flex-container column"> 
+                    <h1 id="intro">Hey there. I'm<br></h1>
+                    <h2 id="fullname">Jack Tran</h2>
+                    <p id="bio">I'm a computer engineering student at UCSD with a curiosity for software - let's code our way to innovation!</p>
+                    <section id="bio-buttons" class="flex-container button-flex">
+                        <a class="button" href="./images/Jack_Tran_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            Resume
+                        </a>
+                        <a class="button" href="https://github.com/tranjack288" target="_blank" rel="noopener noreferrer">GitHub</a>
+                       <a class="button" href="https://www.linkedin.com/in/jacktrancs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </section>
                 </section>
-            </div>
+                <img src="./images/profile_pic.jpg" id="profile-pic" alt="picture of Jack Tran">
+            </section>
+            
             
             <hr>
-            <section id="about_me">
-                <h2>A Little About me</h2>
+            <!-- bio page -->
+            <section id="about_me" class="bio-page flex-container column">
+                <h2 id="title">A Little About me</h2>
+                <section id="bio-paragraph"class="flex-container bio-text column">
+                    <p>Hello there! I am a <em>Computer Engineering</em> student at <em>UCSD</em> with an expected graduation of 2024. My passion for coding drives me to continuously improve my skills and 
+                        find new and innovative ways to bring my ideas to life. My ultimate goal is to work for a leading technology company as a software engineer, where I can leverage my coding skills to 
+                        create products that positively impact people's lives. I am deeply invested in developing solutions that solve real-world problems and have meaningful impact on society.
+                        I have had experiences with working as a <em>student intern</em> for a research lab at <em>UCLA</em>, where I created an AI module to help elementary school students learn.
+                    </p>
+                    <p>    
+                        Aside from being a coding enthusiast, I am a proud member of <em>Phi Gamma Delta</em> fraternity. As a <em>community service leader</em> within the fraternity, I am committed to giving back to society by organizing events
+                        and initiatives that benefit those in need. When I'm not coding, I enjoy a healthy lifestyle through working out, playing soccer, and occasionally playing video games with my friends.
+                        I also cherish the time I spend with friends and making memories with them at music festivals.
+                    </p>
+                </section>
                 
-                <p>Hello there! I am a <em>Computer Engineering</em> student at <em>UCSD</em> with an expected graduation of 2024. My passion for coding drives me to continuously improve my skills and 
-                    find new and innovative ways to bring my ideas to life. My ultimate goal is to work for a leading technology company as a software engineer, where I can leverage my coding skills to 
-                    create products that positively impact people's lives. I am deeply invested in developing solutions that solve real-world problems and have meaningful impact on society.
-                    I have had experiences with working as a <em>student intern</em> for a research lab at <em>UCLA</em>, where I created an AI module to help elementary school students learn.
-                    <br><br>Aside from being a coding enthusiast, I am a proud member of <em>Phi Gamma Delta</em> fraternity. As a <em>community service leader</em> within the fraternity, I am committed to giving back to society by organizing events
-                    and initiatives that benefit those in need. When I'm not coding, I enjoy a healthy lifestyle through working out, playing soccer, and occasionally playing video games with my friends.
-                    I also cherish the time I spend with friends and making memories with them at music festivals.
-                </p>
                 
                 <figure>
                     <img src="images/pic_with_friends.jpg" alt="picture with friends">
@@ -68,6 +79,7 @@
                     <figcaption>A picture my girlfriend and I snowboarding for the first time</figcaption>
                 </figure>
             </section>
+            <!-- experiences page -->
             <hr>
             <section id="Experiences">
                 <h1>Experiences</h1>
