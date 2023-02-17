@@ -1,3 +1,4 @@
+/* phones */
 @media only screen and (max-width: 600px) {
     body {
         font-size: 16px;
@@ -44,7 +45,7 @@
         
     }
 }
-
+/* ipad */
 @media only screen and (min-width: 601px) {
     /* Home page */
     #profile-pic-tiny{
@@ -79,9 +80,13 @@
         font-size: 1.7em;
     }
 }
+/* desktop */
 @media only screen and (min-width: 1900px){
     #home-page{
         font-size: 110%;
+    }
+    ul{
+        padding: 1em;
     }
 }
 #profile-pic {
