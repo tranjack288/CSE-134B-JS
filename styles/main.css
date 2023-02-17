@@ -88,6 +88,9 @@
     ul{
         padding: 1em;
     }
+    figcaption{
+        font-size: 120%;
+    }
 }
 #profile-pic {
     height: 50%;
