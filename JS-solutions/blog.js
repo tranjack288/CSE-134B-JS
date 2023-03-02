@@ -162,8 +162,8 @@ function listItems() {
         list += "<h2>" + items[i].title + "</h2>";
         list += "<p>" + items[i].date + "</p>";
         list += "<p>" + items[i].summary + "</p>";
-        list += "<button class='button1' onclick='editItem(" + i + ")'><span>Edit</span></button>";
-        list += "<button class='button1' onclick='deleteItem(" + i + ")'><span>Delete</span></button>";
+        list += "<button class='button1' onclick='editItem(" + i + ")'><span><i class='fa fa-pencil'></i></span></button>";
+        list += "<button class='button1' onclick='deleteItem(" + i + ")'><span><i class='fa fa-trash-o'></i></span></button>";
         list += "</li>";
     }
     document.getElementById("list-items").innerHTML = list;
