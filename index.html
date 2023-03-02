@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XMYWVN7YJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0XMYWVN7YJ');
+    </script>
     <title> Jack Tran's Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Personal Portfolio" />
@@ -20,6 +29,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+    <script src="./script/main.js"></script>
 </head>
 
 <body class="flex-container column">
@@ -28,10 +38,11 @@
         <!-- <h1>Jack Tran's Website</h1> -->
         <nav>
             <ul>
-                <li class="nav"><span>Home</span></li>
-                <li class="nav"><span>About Me</span></li>
-                <li class="nav"><span>Portfolio</span></li>
-                <li class="nav"><span>Contact Me</span></li>
+                <li class="nav"><a href="#home-page"><span>Home</span></a></li>
+                <li class="nav"><a href="#about_me"><span>About Me</span></a></li>
+                <li class="nav"><a href="#experiences"><span>Portfolio</span></a></li>
+                <li class="nav"><a href="#contact_me"><span>Contact Me</span></a></li>
+                <li class="nav"><a href="JS-solutions\styledcrud.html"><span>Feedback</span></a></li>
             </ul>
         </nav>
     </header>
@@ -56,7 +67,9 @@
                 </section>
             </section>
             <section id="profile-pic-sec" class="flex-container column">
-                <img src="./images/profile_pic_tiny.jpg" id="profile-pic" alt="picture of Jack Tran">
+                <img src="./images/profile_pic.jpg"
+                    onerror="this.onerror=null; this.src='CSE-134B-JS\images\profile_pic_tiny.jpg'" id="profile-pic"
+                    alt="picture of Jack Tran">
             </section>
 
         </section>
@@ -87,15 +100,19 @@
                 </section>
                 <section class="section-img flex-container column">
                     <figure class="flex-container column">
-                        <img id="firstimg" src="images/pic_with_friends_tiny.jpg" alt="picture with friends">
+                        <img id="firstimg" src="images/pic_with_friends_tiny.jpg"
+                            onerror="this.onerror=null; this.src='CSE-134B-JS\images\pic_with_friends1.jpg'"
+                            alt="picture with friends">
                         <figcaption>A picture of me and my friends hiking in Hawaii</figcaption>
                     </figure>
                     <figure class="flex-container column">
-                        <img id="secondimg" src="./images/lifting_resized_tiny.png" alt="lifting">
+                        <img id="secondimg" src="./images/lifting_resized_tiny.png"
+                            onerror="this.onerror=null; this.src='CSE-134B-JS\images\lifting.jpg'" alt="lifting">
                         <figcaption>A picture of me deadlifting 455 pounds</figcaption>
                     </figure>
                     <figure class="flex-container column">
-                        <img id="thirdimg" src="./images/snowboard_tiny.jfif" alt="snowboard">
+                        <img id="thirdimg" src="./images/snowboard_tiny.jfif"
+                            onerror="this.onerror=null; this.src='CSE-134B-JS\images\snowboard.jpg'" alt="snowboard">
                         <figcaption>A picture my girlfriend and I snowboarding for the first time</figcaption>
                     </figure>
                 </section>
@@ -123,6 +140,22 @@
             <h1 id="title">Projects</h2>
                 <section class="flex-container project-section">
                     <section class="flex-container column">
+                        <h2>Personal Webpage</h2>
+                        <p id="date">January 2023-Present</p>
+                        <p class="project-p">
+                            I built this website to practice my web development skills and learned frontend and backend
+                            technology from CSE 134B. I used JavaScript to make a blog page where users can leave
+                            messages or share
+                            any interests in my work. I had so much fun exploring the world of web technology so please
+                            check it out!
+                        </p>
+                    </section>
+                    <img id="personal-webpage" src="images/social-media1.png"
+                        onerror="this.onerror=null; this.src='CSE-134B-JS\images\social-media.png'"
+                        alt="Personal Webpage">
+                </section>
+                <section class="flex-container project-section">
+                    <section class="flex-container column">
                         <h2>San Diego ZooSeeker App</h2>
                         <p id="date">March 2022-June 2022</p>
                         <p class="project-p">
@@ -137,7 +170,9 @@
                             performance of the mobile application by 80% speed.
                         </p>
                     </section>
-                    <img id="zoopic" src="images/San-Diego-Zoo-Logo.png" alt="San Dego Zoo">
+                    <img id="zoopic" src="images/San-Diego-Zoo-Logo1.png"
+                        onerror="this.onerror=null; this.src='CSE-134B-JS\images\San-Diego-Zoo-Logo.png'"
+                        alt="San Dego Zoo">
                 </section>
                 <section class=" flex-container project-section">
                     <section class="flex-container column ">
@@ -151,7 +186,9 @@
                             explore HTML, CSS, and JavaScript.
                         </p>
                     </section>
-                    <img id="workout-img" src="images/workout_planner.png" alt="Workout Planner">
+                    <img id="workout-img" src="images/workout_planner1.jpg"
+                        onerror="this.onerror=null; this.src='CSE-134B-JS\images\workout_planner.png'"
+                        alt="Workout Planner">
                 </section>
                 <section class=" flex-container project-section">
                     <section class="flex-container column">
@@ -166,7 +203,8 @@
                             comparators, disjoint sets, and map.
                         </p>
                     </section>
-                    <img id="hiv" src="images/hiv_trace.png" alt="HIV-Trace">
+                    <img id="hiv" src="images/hiv_trace1.png"
+                        onerror="this.onerror=null; this.src='CSE-134B-JS\images\hiv_trace.png'" alt="HIV-Trace">
                 </section>
         </section>
         <hr>
@@ -177,7 +215,7 @@
             </div>
         </div>
 
-        <section id="contact_me" class="flex-container column">
+        <section id="contact_me" class="flex-container column ">
             <!-- <h2>Don't hesitate and reach out!</h2> -->
             <section class="flex-container">
                 <form method="post" action="contactform.php">
@@ -207,6 +245,7 @@
         <p>tranjack288@gmail.com</p>
         <p>(626)-454-9798</p>
     </footer>
+
 </body>
 
 </html>
